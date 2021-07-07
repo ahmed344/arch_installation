@@ -3,9 +3,9 @@
 sudo timedatectl set-ntp true
 sudo hwclock --systohc
 
-sudo pacman -S --noconfirm xorg xorg-xrandr arandr xorg-xinit mesa i3 i3status i3blocks i3lock dmenu terminator ttf-dejavu polkit lxsession xbindkeys udiskie udisks2 ntfs-3g wget htop pcmanfm gimp vlc firefox thunderbird
+sudo pacman -S --noconfirm xorg xorg-xrandr arandr xorg-xinit mesa i3 i3status i3blocks i3lock dmenu terminator picom polkit lxsession lxappearance xbindkeys udiskie udisks2 ntfs-3g wget htop pcmanfm gimp vlc firefox thunderbird rofi feh geany ttf-font-awesome ttf-ubuntu-font-family ttf-droid ttf-dejavu 
 
-
+sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
 # sudo pacman -S xorg-xdm
 # sudo systemctl enable xdm.service
 # echo “exec i3” > ~/.xsession
